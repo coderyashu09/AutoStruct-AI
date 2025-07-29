@@ -1,95 +1,84 @@
-Sure! ✅ I’ll give you a **real, production-ready `README.md`** for your **AutoStruct AI** project.
-This will include **installation, usage, screenshots placeholder, and real Streamlit instructions** so anyone can run it directly after cloning from GitHub.
-
----
-
-### 📄 Final `README.md`
-
-```markdown
 # 📁 AutoStruct AI
 
-**AutoStruct AI** is a Python + Streamlit tool that **automatically generates folder and file structures** from a `.txt` file.  
-Upload a simple text file showing your desired project tree, and AutoStruct AI will create **nested folders and empty files** in your selected drive.
+**AutoStruct AI** is a Python + Streamlit application that **automatically generates folder and file structures** from a simple `.txt` file.
+Simply upload your text file, select a drive, and the app will instantly create the exact folder and file hierarchy for you.
 
 ---
 
-## 🚀 Features
+## ✨ Key Features
 
-- 📄 Upload `.txt` file with your desired folder & file structure
-- 📂 Creates nested folders and files instantly
-- 🌐 Web-based UI using Streamlit (no terminal commands needed)
-- ⚡ Lightweight and beginner-friendly
+* 🔹 **Upload a `.txt` file** describing your folder structure
+* 🔹 **Instantly generate nested folders and files**
+* 🔹 **Web-based UI** using Streamlit — no coding required
+* 🔹 **Cross-platform** (Windows, macOS, Linux)
+* 🔹 **Beginner-friendly & lightweight**
 
 ---
 
-## 📂 Example Input File
+## 📂 Example
 
-Create a file like `assets/sample_structure.txt`:
+### **Input File (`structure.txt`)**
 
 ```
-
-prompt\_to\_planet
+prompt_to_planet
 ├── app.py
 ├── generator
-│   ├── story\_gen.py
-│   ├── map\_gen.py
-│   └── image\_gen.py
+│   ├── story_gen.py
+│   ├── map_gen.py
+│   └── image_gen.py
 ├── assets
 │   ├── maps
 │   ├── images
 │   └── stories
 ├── requirements.txt
 └── README.md
-
 ```
 
-After generation, your folder will look like:
+### **Generated Output**
 
 ```
-
-E:\prompt\_to\_planet
+E:\prompt_to_planet\
 ├── app.py
-├── generator
-│   ├── story\_gen.py
-│   ├── map\_gen.py
-│   └── image\_gen.py
-├── assets
-│   ├── maps
-│   ├── images
-│   └── stories
+├── generator\
+│   ├── story_gen.py
+│   ├── map_gen.py
+│   └── image_gen.py
+├── assets\
+│   ├── maps\
+│   ├── images\
+│   └── stories\
 ├── requirements.txt
 └── README.md
-
-````
+```
 
 ---
 
-## 🛠 Installation & Setup
+## 🛠 Installation
 
-### 1️⃣ Clone the repository
+1️⃣ **Clone the repository**
 
 ```bash
-git clone https://github.com/YourUsername/AutoStruct-AI.git
+git clone https://github.com/YOUR_USERNAME/AutoStruct-AI.git
 cd AutoStruct-AI
-````
+```
 
-### 2️⃣ Create and activate a virtual environment (recommended)
+2️⃣ **Create a virtual environment (optional but recommended)**
 
-**Windows:**
+**Windows**
 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-**Linux/Mac:**
+**Linux/Mac**
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 3️⃣ Install dependencies
+3️⃣ **Install dependencies**
 
 ```bash
 pip install -r requirements.txt
@@ -105,55 +94,53 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-2. Open the URL shown in your terminal (default: [http://localhost:8501](http://localhost:8501))
+2. Open the app in your browser:
+   👉 [http://localhost:8501](http://localhost:8501)
 
-3. In the web interface:
+3. Steps in the Web App:
 
-   1. **Upload** your `.txt` file with the structure
-   2. **Select Drive Letter** (C, D, E…)
-   3. **Enter Root Folder Name** (e.g., `prompt_to_planet`)
+   1. **Upload** a `.txt` file with your folder structure
+   2. **Select drive letter** (C, D, E…)
+   3. **Enter root folder name**
    4. **Click Generate Structure**
-   5. ✅ Folders and files are created automatically
+   5. ✅ Your folders and files are automatically created!
 
 ---
 
-## 💻 Project Structure
+## 📦 Project Structure
 
 ```
 AutoStruct AI/
 ├── assets/
-│   └── sample_structure.txt
-├── file_parser.py          # Converts text to list of paths
-├── file_creator.py         # Creates folders and files
-├── main.py                 # CLI version
-├── streamlit_app.py        # Web UI version
+│   └── sample_structure.txt      # Example input file
+├── file_parser.py                # Parse .txt into file paths
+├── file_creator.py                # Create folders & files
+├── main.py                        # CLI version (optional)
+├── streamlit_app.py               # Web-based UI
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## 📦 Dependencies
+## 📸 Screenshots
 
-* **Python 3.8+**
-* **Streamlit** – Web UI
-* **Pillow** – (If using image-to-structure in future)
-* **pytesseract** – (Optional OCR support for images)
+*(Optional: Add screenshots of your Streamlit interface here)*
 
-Install all with:
-
-```bash
-pip install -r requirements.txt
-```
+---
 
 ## 🤝 Contributing
 
-Pull requests are welcome.
-If you plan to add a major feature, please open an issue first to discuss what you’d like to change.
+1. **Fork** the project
+2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
+3. **Commit your changes** (`git commit -m 'Add AmazingFeature'`)
+4. **Push to branch** (`git push origin feature/AmazingFeature`)
+5. **Open a Pull Request** 🎉
 
 ---
 
 ## 📜 License
 
 MIT License © 2025 \coderyashu09
+Feel free to use and modify this project for your needs.
 
