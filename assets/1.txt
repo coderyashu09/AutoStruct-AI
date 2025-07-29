@@ -1,0 +1,10 @@
+AutoStruct AI/
+├── assets/
+├── .venv/                 
+│   └── sample_structure.txt      
+├── file_creator.py         
+├── main.py              
+├── streamlit_app.py
+├── utils.py                  
+├── README.md
+├── requirements.txt
