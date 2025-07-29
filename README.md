@@ -142,5 +142,7 @@ AutoStruct AI/
 ## 📜 License
 
 MIT License © 2025 \coderyashu09
+
+---
 Feel free to use and modify this project for your needs.
 
